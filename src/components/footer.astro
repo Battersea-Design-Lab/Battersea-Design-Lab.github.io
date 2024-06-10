@@ -1,0 +1,39 @@
+---
+---
+<footer id ="footer" class="footer">
+  <div class="footer-container">
+    <p>Battersea Design Lab © 2024.</p>
+    <p>All rights reserved.</p>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    position: absolute;
+    bottom: 0;
+    color: #00000040;
+    text-align: center;
+    padding: 0.5rem;
+    width: 100%;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+</style>
+
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+  const footer = document.getElementById('footer');
+  const contentHeight = document.querySelector('.content').offsetHeight;
+  const viewportHeight = window.innerHeight;
+
+  if (contentHeight < viewportHeight) {
+      footer.style.position = 'fixed';
+      footer.style.bottom = '0';
+  } else {
+      footer.style.position = 'static';
+  }
+});
+</script>

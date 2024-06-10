@@ -1,0 +1,99 @@
+[
+    {
+        "key" : "jenn",
+        "name" : "Jennifer Chang",
+        "bio-short": "",
+        "bio-long" : [
+            "A combination of East Asian culture - Korean, Japanese and Chinese. "
+        ],
+        "links" : {
+            "personal" : "www.searle.hu",
+            "twitter" : "@benjaminsearle_"
+        }
+    }, 
+
+    {
+        "key" : "haeji",
+        "name" : "Haeji Shin",
+        "bio-short": "",
+        "bio-long" : [
+            "I am a researcher from Seoul, South Korea. My work focuses on exploring novel, experimental technology and making them more human-centered. For instance, how do people perceive social AI robots and how could/should it be used in the future? I am working with Furhat Robotics to answer these questions and to make social AI robots more human.",
+            "At UCL, I worked on a project comparing eating in extended reality (XR) and real life (IRL). I explored the design space of digital commensality in relation to the eating we are familiar with.",
+            "My research is grounded in behavioral cognitive neuroscience, which I studied at Korea University. Focusing on visual and haptic perception, I studied how people ‘see’ impacts their thoughts and actions."
+        ],
+        "links" : {
+            "personal" : "www.searle.hu",
+            "twitter" : "@benjaminsearle_"
+        }
+    },
+
+    {
+        "key" : "sam",
+        "name" : "Sam Wilkinson",
+        "bio-short": "",
+        "bio-long" : [
+            "I am user experience researcher and product designer from London. I specialize in transforming traditional experiences into dynamic digital solutions. Rather than simply replicating existing experiences in a digital environment, I delve into the core user needs, experiences, and goals to leverage technology in innovative ways that traditional mediums cannot.",
+            "My research is centred around the domain of virtual reality; extending traditional user research methods into the new paradigm of three dimensional digital space and how more user information can be garnered through this new form of full-body interaction. As a PhD candidate at University College London, my area of research has expanded to explore to encompass the fields of public mental health and how the introduction of affective interaction principals and machines learning can benefit us as a society."
+        ],
+        "links" : {
+            "personal" : "www.searle.hu",
+            "twitter" : "@benjaminsearle_"
+        }
+    },
+
+    {
+        "key" : "yao",
+        "name" : "Yuan Yao",
+        "bio-short": "",
+        "bio-long" : [
+            "No bio available"
+        ],
+        "links" : {
+            "personal" : "www.searle.hu",
+            "twitter" : "@benjaminsearle_"
+        }
+    },
+
+    {
+        "key" : "allison",
+        "name" : "Allison Hall",
+        "bio-short": "",
+        "bio-long" : [
+            "I am a UX researcher from Seattle, Washington, USA. I aim to change the future of digital health through my novel research. My dissertation involved designing an LLM-based information seeking platform specifically for people living with ALS—both in design and content. I solicited input from a medical professionals, assistive technologists and people living with ALS, as well as caregivers and high-level leaders at the International Alliance of ALS/MND Associations to create and evaluate a solution that reflected the needs of all stakeholders. I continue to work in accessible and inclusive technology as a research assistant at National Tsing Hua University in Hsinchu, Taiwan, conducting participatory design research with psychologists and LGBTQ+ individuals to develop an AI-based therapeutic tool. "
+        ],
+        "links" : {
+            "personal" : "https://www.allisonhall.info/",
+            "linkedin" : "https://www.linkedin.com/in/allison-hall-125460123/"
+        }
+    },
+
+    {
+        "key" : "nicole",
+        "name" : "Nicole Soh",
+        "bio-short": "",
+        "bio-long" : [
+            "I am a researcher and designer from Sunny Singapore! I’m most interested in designing user interactions around AI. Inspired by how users might trust differently when presented with hallucinatory responses from converational and GenAI such as ChatGPT, my MSc research focused on examining user trust in a chatbot embedded with credibility cues. What happens when a chatbot presenting itself as credible provides false information to users? These were some questions my research aim to answer. "
+        ],
+        "links" : {
+            "personal" : "www.searle.hu",
+            "twitter" : "@benjaminsearle_"
+        }
+    },
+
+    {
+        "key" : "ben",
+        "name" : "Benjamin Searle",
+        "bio-short": "",
+        "bio-long" : [
+            "I’m a researcher and designer from Hungary. Previously at the University of Cambridge, I'm now researching well-being technologies and experimental research methods involving role-play and therapeutic practices at the UCL Interaction Centre as a PhD candidate. I take inspiration from various linguistic, sociological, and cultural artefacts to improve human-data/human-AI interactions. I focus on systems that support self-management, such as wearables, journals, and other personal informatics devices.",
+            "To complement my work, I prototype experimental interfaces that emphasise the human over the user, such as the Amulet Social Journalling app. I am also involved with Mesm, a platform for city-wide AR storytelling associated with Cologne Game Lab."
+        ],
+        "links" : {
+            "personal" : "https://www.searle.hu",
+            "twitter" : "https://x.com/@benjaminsearle_",
+            "linkedin" : "https://www.linkedin.com/in/blsearle/",
+            "gscholar" : "https://scholar.google.com/citations?user=0cNZSrwAAAAJ&hl=en",
+            "github" : "https://github.com/Bhorda"
+        }
+    }
+]

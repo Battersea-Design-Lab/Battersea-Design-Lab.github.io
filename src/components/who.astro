@@ -1,0 +1,126 @@
+---
+import { Image } from "astro:assets";
+import { Icon } from "astro-icon/components";
+
+import Ben from '~/assets/pfp-ben.png'
+---
+
+<div class="card">
+    <h1>
+      Who we are
+    </h1>
+    <p>
+      We are an experimental research collective comprised of scientists, engineers, psychologists, designers, and entrepreneurs working on technology design problems.
+    </p>
+    <p>
+      Our diverse background displays expertise in qualitative and quantitative methods. Founded on cross-disciplinary theories of psychology, sociology, and technology; we bring knowledge and experience in AI, robotics, XR, art, fashion, digital health, well-being, and community.
+    </p>
+    <div class="pfp-container">
+      <Image
+        src={Ben}
+        alt=" Profile: Jennifer Chang"
+      />
+      <Image
+        src={Ben}
+        alt=" Profile: Haeji Shin"
+      />
+      <Image
+        src={Ben}
+        alt=" Profile: Sam Wilkinson"
+      />
+      <Image
+        src={Ben}
+        alt=" Profile: Yuan Yao"
+      />
+      <div class="pfp-container-overflow">
+      <Image
+        src={Ben}
+        alt=" Profile: Allison Hall"
+      />
+      <Image
+        src={Ben}
+        alt=" Profile: Nicole Soh"
+      />
+      <Image
+        src={Ben}
+        alt=" Profile: Benjamin Searle"
+      />
+    </div>
+    </div>
+    <div class="button-container">
+      <a href="/about">
+        Meet the team
+        <Icon name="arrow-right-bold" class="size-4"/>
+      </a>
+    </div>
+  </div>
+
+<style>
+  .card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+    background-color: #00000010;
+    border-radius: 2rem;
+    max-width: 1000px;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 0.5rem;
+    align-self: stretch;
+  }
+
+  .pfp-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 0.5rem;
+    margin: 1rem 2rem;
+  }
+
+  .pfp-container-overflow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 0.5rem;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.375rem;
+  }
+
+  p {
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+  }
+
+  a {
+    display: flex;
+    flex-direction: row;
+    padding: 0.75rem 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    background-color: #000;
+    border-radius: 2rem;
+    color: #FFF;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+
+  img {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 10rem;
+  }
+</style>

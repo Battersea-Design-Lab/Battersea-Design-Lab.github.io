@@ -1,0 +1,78 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<div class="card">
+  <div class="card-container">
+    <h1>
+      Work with us
+    </h1>
+    <div class="button-container">
+      <a class="email" href="mailto:info@batterseadesignlab.com">
+        Get in touch
+        <Icon name="paper-plane-tilt-bold" class="size-4"/>
+      </a>
+      <a href="/services">
+        Our services
+        <Icon name="arrow-right-bold" class="size-4"/>
+      </a>
+    </div>
+    </div>
+  </div>
+
+<style>
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem 1.5rem;
+    background-color: #00000010;
+    border-radius: 2rem;
+    max-width: 1000px;
+    align-self: stretch;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: flex-end;
+    gap: 10px;
+    align-self: stretch;
+  }
+
+  .email {
+    background-color: #00000000;
+    color: #000;
+    box-shadow:inset 0px 0px 0px 0.125rem #000;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: start;
+  }
+
+  a {
+    display: flex;
+    flex-direction: row;
+    padding: 0.75rem 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    background-color: #000;
+    border-radius: 2rem;
+    color: #FFF;
+    font-size: 0.875rem;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+</style>

@@ -1,0 +1,157 @@
+---
+import Footer from "~/components/footer.astro";
+import Header from "~/components/header.astro";
+import Profile from "~/components/profile.astro";
+import CTA from "~/components/cta.astro";
+import "~/styles/index.css";
+
+const { generator, site } = Astro;
+const image = new URL("social.jpg", site);
+const description =
+  "Future technology demands new research methodologies.";
+
+import profiles from '~/content/profiles/profiles.json';
+---
+
+<!doctype html>
+<html lang="en" class="h-full motion-safe:scroll-smooth" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="generator" content={generator} />
+
+    <title>Battersea Design Lab</title>
+    <meta name="description" content={description} />
+
+    <!-- social media -->
+    <meta property="og:title" content="Battersea Design Lab" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image} />
+    <meta property="og:url" content={site} />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- NOT IN USE  -->
+    <!-- initialize theme -->
+    <!-- <script is:inline>
+      const themeSaved = localStorage.getItem("theme");
+
+      if (themeSaved) {
+        document.documentElement.dataset.theme = themeSaved;
+      } else {
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)",
+        ).matches;
+        document.documentElement.dataset.theme = prefersDark ? "dark" : "light";
+      }
+
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .addEventListener("change", (event) => {
+          if (!localStorage.getItem("theme")) {
+            document.documentElement.dataset.theme = event.matches
+              ? "dark"
+              : "light";
+          }
+        });
+    </script> -->
+  </head>
+  <body>
+    <Header />
+    <div class="content">
+      <div class="intro">
+        <h1>
+          Who we are
+        </h1>
+        <p>
+          We are an experimental research collective comprised of 7 scientists, engineers, psychologists, designers, and entrepreneurs working on technology design problems.
+        </p>
+        <p>
+          Our diverse background displays expertise in qualitative and quantitative methods. Founded on cross-disciplinary theories of psychology, sociology, and technology; we bring knowledge and experience in AI, robotics, XR, art, fashion, digital health, well-being, and community.
+        </p>
+        <h1>
+          Our story
+        </h1>
+        <p>
+          After graduating together from UCL's Human-Computer Interaction MSc programme, we found that academia and industry are not always at the same maturity level in terms of innovation. Seeing how traditional user experience research methodologies could not keep up with the astonishing speed of innovation, we decided to start building the scaffolding for the future of technology design ourselves.
+        </p>
+        <p>
+          In early 2024, we founded this collective to push the field of HCI to meet the demand of future technologies under three core values: rigorously experimental, empathetically pragmatic, delusionally creative.
+        </p>
+      </div>
+
+      {profiles.map(profile => (
+        <Profile
+          key={profile.key}
+          name={profile.name}
+          bioLong={profile["bio-long"]}
+          links={profile.links}
+        />
+      ))}
+      <CTA />
+    </div>
+    <Footer />
+  </body>
+</html>
+
+<style>
+  .fixed-header {
+    @apply fixed bottom-auto top-0;
+    @apply border-default bg-default text-default;
+  }
+  .modal.is-open {
+    @apply block;
+  }
+
+  .content {
+    display: flex;
+    max-width: 1200px;
+    padding: 2rem 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    flex-shrink: 0;
+    padding: 1rem;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    max-width: 1000px;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.375rem;
+  }
+
+  p {
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+</style>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const footer = document.getElementById('footer');
+    const contentHeight = document.querySelector('content').offsetHeight;
+    const viewportHeight = window.innerHeight;
+
+    if (contentHeight < viewportHeight) {
+        footer.style.position = 'fixed';
+        footer.style.bottom = '0';
+    } else {
+        footer.style.position = 'static';
+    }
+});
+</script>
