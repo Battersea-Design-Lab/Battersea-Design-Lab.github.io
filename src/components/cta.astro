@@ -34,6 +34,7 @@ import { Icon } from "astro-icon/components";
 
   .card-container {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
@@ -43,8 +44,8 @@ import { Icon } from "astro-icon/components";
   .button-container {
     display: flex;
     flex-direction: row;
-    justify-content: end;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: flex-center;
     gap: 10px;
     align-self: stretch;
   }
@@ -74,5 +75,24 @@ import { Icon } from "astro-icon/components";
     font-size: 0.875rem;
     font-weight: 500;
     white-space: nowrap;
+  }
+
+  @media (min-width: 700px) {
+    .card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+  }
+  .button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: flex-end;
+    gap: 10px;
+    align-self: stretch;
+  }
   }
 </style>

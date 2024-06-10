@@ -2,12 +2,12 @@
 import { Image } from "astro:assets";
 import { Icon } from "astro-icon/components";
 
-const { key ='', name = '', bioLong = [], links = {} } = Astro.props;
+const { key ='', name = '', bioLong = [], pfp ='', links = {} } = Astro.props;
 ---
 
 <div class="card">
   <div class="pfp-container">
-    <img class="pfp" src={ `/src/assets/pfp-${key}.png` }></img>
+    <img class="pfp" src={ `/profiles/pfp-${key}.png` }></img>
   </div>
 
   <div>
