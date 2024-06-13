@@ -41,9 +41,14 @@
         "name" : "Yuan Yao",
         "bio-short": "",
         "bio-long" : [
-            "Currently very busy! Bio coming soon..."
+            "I am a UX researcher and mobile developer with a Bachelor's degree in Computer Science from UC Santa Barbara and a Master's degree in Human-Computer Interaction from UCL in London. I am passionate about exploring various forms and expressions of interfaces and understanding their psychological impact.",
+            "For my Master's dissertation, I investigated how meaningful data visualizations of individual electricity consumption can influence energy-saving motivations. Additionally, I am deeply interested in mobile development. My recent projects include Planana, a travel planner for travelers who hate planning, and Rings, an information hub that consolidates health and fitness data from various wearables."
         ],
         "links" : {
+            "personal" : "https://whyyao.com/",
+            "twitter" : "https://x.com/whyyyao",
+            "linkedin" : "https://www.linkedin.com/in/whyyao/",
+            "github" : "https://github.com/whyyao"
         }
     },
 
